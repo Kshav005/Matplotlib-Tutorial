@@ -9,4 +9,9 @@ votes = ["hey", "no", "life", "life", "hail", "yes", "what", "hey", "no", "no", 
 plt.hist(votes)
 plt.show()
 
+# You can also set histype which has values - [bar, barstacked, step, stepfilled] and set orientation of either vertical or horizontal.
+plt.hist(votes, histtype="step", orientation="horizontal")
+plt.show()
+
+
 # The data tells how many times, a certain point has occured.

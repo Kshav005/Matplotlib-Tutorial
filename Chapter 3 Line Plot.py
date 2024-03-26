@@ -23,5 +23,15 @@ plt.show()
 
 # You can even specify color and linestyle in just one parameter, type of shorthand 
 plt.plot(year, ylabel, "g--")         # Generates a dashed line of 'g' (green) color.
-
 plt.show()
+
+# You can specify a drawstyle, which has values - [default, steps, steps-pre, steps-mid, steps-post] and marker style which has values - ['.' for point, ',' for pixel, 'o' for circle, 'v' for triangle down, 'h' for hexagon, 'd' for diamond, '4' for caretleft, 'p' for plus, etc.]
+plt.plot(year, ylabel, ds="steps-post", marker="d")
+plt.show()
+
+# To enhance your markers, there are 1 more argument for that. However, there are only some of the markers which support it. Print 'filled_markers' in order to get which markers have the argument supported.
+# The argument is 'fill_style' which let's you either fully fill, partially fill or no fill the marker.
+plt.plot(year, ylabel, ds="steps-post", marker="o", fillstyle="none")
+plt.show()
+
+# That's all for this chapter! We will meet in the next chapter and study more about this amazing module. Keep on coding!

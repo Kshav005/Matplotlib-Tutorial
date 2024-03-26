@@ -30,5 +30,21 @@ plt.show()
 plt.pie(ppl, labels=gender, startangle=90)
 plt.show()
 
+# To enable shadow and increase the distance of the labels.
+plt.pie(ppl, labels=gender, colors=["yellow", "green", "black"], shadow=True, labeldistance=1.5)
+plt.show()
+
+# To decrease the overall size of the circle
+plt.pie(ppl, labels=gender, colors=["yellow", "green", "black"], radius=0.5)
+plt.show()
+
+# To specify direction whether to plot fractions clockwise or anticlockwise and rotate values by some degrees.
+plt.pie(ppl, labels=gender, rotatelabels=60, counterclock=False)
+plt.show()
+
+
+
+
+
 # That's all for pie chart! I hope you learnt something today and make sure that you always revise these concepts in order to work more efficiently.
 

@@ -17,4 +17,13 @@ plt.show()
 plt.bar(game, votes, width=0.4)
 plt.show()
 
+# You can also set edgecolor and edge width
+plt.bar(game, votes, edgecolor="blue", color="black", linewidth=3)
+plt.show()
+
+# Hatch can also be used to fill the bars with a symbol. It can take values from - [/, \, |, -, +, x, o, O, ., *]
+plt.bar(game, votes, edgecolor="blue", color="black", linewidth=3, hatch="*")
+plt.show()
+
+
 # Hence, the chapter has been completed! Let's meet in the next chapter for histogram.
